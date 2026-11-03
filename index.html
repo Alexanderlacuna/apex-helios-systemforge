@@ -33,6 +33,7 @@
   "@type": "ProfessionalService",
   "name": "APEX HELIOS SYSTEMFORGE",
   "description": "Software development, mobile application design, system architecture engineering, cloud infrastructure integration, artificial intelligence systems, database management and IT consulting.",
+  "email": "alexanderkabua@gmail.com",
   "telephone": "+254142769972",
   "address": {
     "@type": "PostalAddress",
@@ -379,11 +380,38 @@
           Whether it is a new product, a rescue of an existing system, or an architecture
           review before you commit budget — start with a short conversation.
         </p>
+
+        <form class="contact-form" id="contactForm" method="post" action="mailto:alexanderkabua@gmail.com" enctype="text/plain">
+          <div class="field">
+            <label for="cf-name">Your name</label>
+            <input id="cf-name" name="name" type="text" autocomplete="name" placeholder="Jane Doe" required>
+          </div>
+          <div class="field">
+            <label for="cf-email">Your email</label>
+            <input id="cf-email" name="email" type="email" autocomplete="email" placeholder="you@company.com" required>
+          </div>
+          <div class="field">
+            <label for="cf-message">What do you need built?</label>
+            <textarea id="cf-message" name="message" rows="4" placeholder="The system, the timeline, and what done looks like." required></textarea>
+          </div>
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit">Send message</button>
+            <a class="btn btn-ghost" href="mailto:alexanderkabua@gmail.com">Email directly</a>
+          </div>
+          <p class="form-note" id="formNote" role="status" aria-live="polite">
+            Opens your email app with the message pre-filled and addressed to
+            <span class="mono">alexanderkabua@gmail.com</span>.
+          </p>
+        </form>
       </div>
 
       <div class="contact-cards">
+        <a class="contact-card contact-card-primary reveal" href="mailto:alexanderkabua@gmail.com">
+          <span class="contact-label">Email us</span>
+          <span class="contact-value mono">alexanderkabua@gmail.com</span>
+        </a>
         <a class="contact-card reveal" href="tel:+254142769972">
-          <span class="contact-label">Talk to us</span>
+          <span class="contact-label">Call</span>
           <span class="contact-value mono">+254 142 769 972</span>
         </a>
         <div class="contact-card reveal">
@@ -393,10 +421,6 @@
         <div class="contact-card reveal">
           <span class="contact-label">Working hours</span>
           <span class="contact-value">Mon – Fri<br>08:00 – 18:00 EAT</span>
-        </div>
-        <div class="contact-card reveal">
-          <span class="contact-label">Engagements</span>
-          <span class="contact-value">New builds<br>Reviews &amp; retainers</span>
         </div>
       </div>
     </div>
@@ -408,6 +432,7 @@
     <div class="footer-brand">
       <strong>APEX HELIOS SYSTEMFORGE</strong>
       <p>Software · Mobile · Systems Engineering</p>
+      <p class="footer-contact"><a href="mailto:alexanderkabua@gmail.com">alexanderkabua@gmail.com</a></p>
     </div>
     <nav class="footer-nav" aria-label="Footer">
       <a href="#services">Services</a>

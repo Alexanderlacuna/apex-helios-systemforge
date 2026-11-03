@@ -43,6 +43,39 @@
     });
   }
 
+  /* contact form -> mailto compose */
+  var form = document.getElementById("contactForm");
+  var note = document.getElementById("formNote");
+
+  if (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+
+      var f = form.elements;
+      var name = f.name.value.trim();
+      var email = f.email.value.trim();
+      var message = f.message.value.trim();
+
+      var subject = "Project enquiry — " + name;
+      var body = message + "\n\n— " + name + "\n" + email;
+
+      window.location.href =
+        "mailto:alexanderkabua@gmail.com" +
+        "?subject=" + encodeURIComponent(subject) +
+        "&body=" + encodeURIComponent(body);
+
+      if (note) {
+        note.textContent =
+          "Opening your email app. If nothing happens, email alexanderkabua@gmail.com directly.";
+      }
+    });
+  }
+
   /* reveal on scroll */
   var items = document.querySelectorAll(".reveal");
   var reduce =
