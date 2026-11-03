@@ -153,60 +153,59 @@
         <p class="kicker">Where we work</p>
         <h2>Two disciplines, taken seriously</h2>
         <p class="section-lede">
-          Most AI work fails above the model — in the architecture that was never
-          decided. We do both, in that order: the system first, then the intelligence
-          inside it.
+          Most AI work fails above the model — in the architecture that was
+          never decided. We do both, in that order.
         </p>
       </header>
 
       <div class="pillars">
         <article class="pillar reveal">
-          <div class="pillar-head">
-            <span class="pillar-num mono" aria-hidden="true">01</span>
+          <span class="pillar-num mono" aria-hidden="true">01</span>
+          <div class="pillar-main">
             <h3>System architecture engineering</h3>
+            <p class="pillar-claim">Systems rarely rot from bad code. They rot from decisions nobody wrote down.</p>
+            <p class="pillar-sub">We settle the expensive, hard-to-reverse calls first — where the boundaries sit, who owns which data, what the contracts are — and hand the reasoning over with the system.</p>
+            <a class="pillar-link" href="#architecture">How we architect <span aria-hidden="true">→</span></a>
           </div>
-          <p>
-            Domain boundaries, data ownership and integration contracts settled before
-            they become expensive. The output is a system your team can extend without
-            reverse-engineering someone else's assumptions.
-          </p>
-          <ul class="pillar-list">
-            <li>Domain boundaries &amp; service decomposition</li>
-            <li>Data modelling with a single owner per fact</li>
-            <li>Integration contracts &amp; versioning policy</li>
-            <li>Scaling strategy against real load assumptions</li>
-            <li>Failure modes, idempotency and recovery targets</li>
-            <li>Decisions written down, not held in someone's head</li>
-          </ul>
-          <a class="pillar-link" href="#architecture">How we architect <span aria-hidden="true">→</span></a>
+          <div class="pillar-outcomes">
+            <p class="pillar-outcomes-head">What changes</p>
+            <ul>
+              <li>Boundaries that survive being changed</li>
+              <li>One owner per fact, so no two services disagree</li>
+              <li>Decisions on record instead of in someone's head</li>
+            </ul>
+          </div>
         </article>
 
         <article class="pillar reveal">
-          <div class="pillar-head">
-            <span class="pillar-num mono" aria-hidden="true">02</span>
+          <span class="pillar-num mono" aria-hidden="true">02</span>
+          <div class="pillar-main">
             <h3>Artificial intelligence systems</h3>
+            <p class="pillar-claim">An AI feature is a system. Most get shipped as a prompt.</p>
+            <p class="pillar-sub">We build the layer that makes a model accountable — retrieval grounded in your own records, serving on infrastructure you control, and evaluation numbers you can put in front of a client.</p>
+            <a class="pillar-link" href="#ai-infrastructure">How we ship AI <span aria-hidden="true">→</span></a>
           </div>
-          <p>
-            AI that answers from your records, runs on infrastructure you control, and
-            can be measured when someone asks whether it is right. Built as a system —
-            not a prompt bolted onto a product.
-          </p>
-          <ul class="pillar-list">
-            <li>Retrieval grounded in your own data</li>
-            <li>Private model serving &amp; inference</li>
-            <li>Agent workflows with bounded autonomy</li>
-            <li>Evaluation sets and regression on every change</li>
-            <li>Cost, latency and capacity control</li>
-            <li>Guardrails and human checkpoints</li>
-          </ul>
-          <a class="pillar-link" href="#ai-infrastructure">How we ship AI <span aria-hidden="true">→</span></a>
+          <div class="pillar-outcomes">
+            <p class="pillar-outcomes-head">What you can prove</p>
+            <ul>
+              <li>Answers traced back to a document, not invented</li>
+              <li>Runs on your infrastructure, priced predictably</li>
+              <li>A score for whether the answer was right</li>
+            </ul>
+          </div>
         </article>
       </div>
 
-      <p class="also reveal">
+      <div class="also reveal">
         <span class="also-label">Also available</span>
-        Custom software · Mobile applications · Cloud infrastructure · Data &amp; databases · IT advisory
-      </p>
+        <ul class="also-list">
+          <li>Custom software</li>
+          <li>Mobile applications</li>
+          <li>Cloud infrastructure</li>
+          <li>Data &amp; databases</li>
+          <li>IT advisory</li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -436,52 +435,57 @@
         <p class="kicker">Contact</p>
         <h2>Tell us what you need to build</h2>
         <p class="section-lede">
-          Whether it is a new product, a rescue of an existing system, or an architecture
-          review before you commit budget — start with a short conversation.
+          A new product, a rescue of an existing system, or an architecture review
+          before you commit budget — all of it starts with a short conversation.
         </p>
 
-        <form class="contact-form" id="contactForm" method="post" action="mailto:alexanderkabua@gmail.com" enctype="text/plain">
-          <div class="field">
-            <label for="cf-name">Your name</label>
-            <input id="cf-name" name="name" type="text" autocomplete="name" placeholder="Jane Doe" required>
+        <dl class="contact-facts">
+          <div>
+            <dt>Email</dt>
+            <dd><a href="mailto:alexanderkabua@gmail.com">alexanderkabua@gmail.com</a></dd>
           </div>
-          <div class="field">
-            <label for="cf-email">Your email</label>
-            <input id="cf-email" name="email" type="email" autocomplete="email" placeholder="you@company.com" required>
+          <div>
+            <dt>Call</dt>
+            <dd><a href="tel:+254142769972">+254 142 769 972</a></dd>
           </div>
-          <div class="field">
-            <label for="cf-message">What do you need built?</label>
-            <textarea id="cf-message" name="message" rows="4" placeholder="The system, the timeline, and what done looks like." required></textarea>
+          <div>
+            <dt>Studio</dt>
+            <dd>Kilifi, Kenya · EAT (UTC+3)</dd>
           </div>
-          <div class="form-actions">
-            <button class="btn btn-primary" type="submit">Send message</button>
-            <a class="btn btn-ghost" href="mailto:alexanderkabua@gmail.com">Email directly</a>
+          <div>
+            <dt>Hours</dt>
+            <dd>Mon – Fri, 08:00 – 18:00</dd>
           </div>
-          <p class="form-note" id="formNote" role="status" aria-live="polite">
-            Opens your email app with the message pre-filled and addressed to
-            <span class="mono">alexanderkabua@gmail.com</span>.
-          </p>
-        </form>
+          <div>
+            <dt>Reply</dt>
+            <dd>Within one working day</dd>
+          </div>
+        </dl>
       </div>
 
-      <div class="contact-cards">
-        <a class="contact-card contact-card-primary reveal" href="mailto:alexanderkabua@gmail.com">
-          <span class="contact-label">Email us</span>
-          <span class="contact-value mono">alexanderkabua@gmail.com</span>
-        </a>
-        <a class="contact-card reveal" href="tel:+254142769972">
-          <span class="contact-label">Call</span>
-          <span class="contact-value mono">+254 142 769 972</span>
-        </a>
-        <div class="contact-card reveal">
-          <span class="contact-label">Studio</span>
-          <span class="contact-value">Kilifi, Kenya<br>East Africa</span>
+      <form class="contact-form reveal" id="contactForm" method="post" action="mailto:alexanderkabua@gmail.com" enctype="text/plain">
+        <p class="form-head">Project enquiry</p>
+        <div class="field">
+          <label for="cf-name">Your name</label>
+          <input id="cf-name" name="name" type="text" autocomplete="name" placeholder="Jane Doe" required>
         </div>
-        <div class="contact-card reveal">
-          <span class="contact-label">Working hours</span>
-          <span class="contact-value">Mon – Fri<br>08:00 – 18:00 EAT</span>
+        <div class="field">
+          <label for="cf-email">Your email</label>
+          <input id="cf-email" name="email" type="email" autocomplete="email" placeholder="you@company.com" required>
         </div>
-      </div>
+        <div class="field">
+          <label for="cf-message">What do you need built?</label>
+          <textarea id="cf-message" name="message" rows="5" placeholder="The system, the timeline, and what done looks like." required></textarea>
+        </div>
+        <div class="form-actions">
+          <button class="btn btn-primary" type="submit">Send message</button>
+          <a class="btn btn-ghost" href="mailto:alexanderkabua@gmail.com">Email directly</a>
+        </div>
+        <p class="form-note" id="formNote" role="status" aria-live="polite">
+          Opens your email app with the message pre-filled, addressed to
+          <span class="mono">alexanderkabua@gmail.com</span>.
+        </p>
+      </form>
     </div>
   </section>
 </main>
@@ -490,7 +494,7 @@
   <div class="wrap footer-inner">
     <div class="footer-brand">
       <strong>APEX HELIOS SYSTEMFORGE</strong>
-      <p>Software · Mobile · Systems Engineering</p>
+      <p>System Architecture · AI Systems</p>
       <p class="footer-contact"><a href="mailto:alexanderkabua@gmail.com">alexanderkabua@gmail.com</a></p>
     </div>
     <nav class="footer-nav" aria-label="Footer">
