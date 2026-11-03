@@ -61,7 +61,6 @@ p:last-child { margin-bottom: 0; }
 a { color: inherit; text-decoration: none; }
 
 .mono { font-family: var(--font-mono); font-size: 0.94em; letter-spacing: -0.01em; }
-.tiny { font-size: 0.8rem; color: var(--muted); }
 .grad {
   background: linear-gradient(100deg, var(--accent-2), var(--accent) 45%, var(--accent-3));
   -webkit-background-clip: text;
