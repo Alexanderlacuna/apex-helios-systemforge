@@ -2,6 +2,15 @@
 
 Static business landing page (single page, no build step, no dependencies).
 
+## Positioning
+
+The page leads with two disciplines — **system architecture engineering** and
+**artificial intelligence systems** — each with its own depth section
+(`#architecture`, `#ai-infrastructure`). The remaining capabilities
+(custom software, mobile, cloud, data, advisory) are demoted to a single muted
+"also available" strip above the fold of `#services` so the studio still reads
+as bookable for smaller work without diluting the specialism.
+
 ```
 index.html              # the whole page
 assets/styles.css       # design system + layout
@@ -50,4 +59,11 @@ top of `assets/styles.css` (`:root`).
 ## Content notes
 
 The page intentionally contains no personal identity details and no business
-registration number — only company-level marketing copy and a contact number.
+registration number — only company-level marketing copy and a contact address.
+
+The public email address `alexanderkabua@gmail.com` appears in four places and must
+be changed together: the `#contact` email card, the `mailto:` form action, the
+footer link, and the `email` field of the JSON-LD block.
+
+Page structure is `plain → alt → plain → alt → plain → alt` via
+`.section` / `.section-alt`; keep that alternation if you insert a section.
