@@ -14,7 +14,8 @@ as bookable for smaller work without diluting the specialism.
 ```
 index.html              # the whole page
 assets/styles.css       # design system + layout
-assets/app.js           # nav toggle, scroll reveal (progressive enhancement)
+assets/app.js           # nav toggle, scroll reveal, contact form (progressive enhancement)
+assets/sky.js           # hero starfield + comets (canvas; pauses off-screen, off under reduced-motion)
 assets/favicon.svg      # favicon
 assets/logo.svg         # wordmark
 assets/og-image.svg     # social share card

@@ -1,50 +1,37 @@
 # APEX HELIOS SYSTEMFORGE — LinkedIn company page copy
 
-Paste-ready. LinkedIn strips markdown, so everything below is plain text.
+Paste-ready. LinkedIn strips markdown and **preserves line breaks**, so every
+paragraph below is one unbroken line — copy it exactly as-is rather than retyping.
 
 ---
 
-## Tagline (120 char limit)
+## Tagline (120 char limit) — 118 chars
 
 Systems engineering studio: architecture engineering and AI systems — private model serving, retrieval, orchestration.
 
 ---
 
-## About us (2,000 char limit)
+## About us (2,000 char limit) — 1,350 chars
 
-Most AI projects do not fail inside the model. They fail above it — in the
-architecture that was never decided.
+Most AI projects do not fail inside the model. They fail above it — in the architecture that was never decided.
 
-APEX HELIOS SYSTEMFORGE is a systems engineering studio. We settle the expensive,
-hard-to-reverse decisions first: domain boundaries, data ownership and integration
-contracts. Then we build the AI layer on top.
+APEX HELIOS SYSTEMFORGE is a systems engineering studio. We settle the expensive, hard-to-reverse decisions first: domain boundaries, data ownership and integration contracts. Then we build the AI layer on top.
 
 WHAT WE DO
 
 System architecture engineering
-Domain boundaries and service decomposition. Data modelling with a single owner per
-fact. Integration contracts and versioning policy. Scaling strategy against real
-load. Failure modes, idempotency and recovery targets. Decisions written down, so
-your team can extend the system without reverse-engineering it.
+Domain boundaries and service decomposition. Data modelling with a single owner per fact. Integration contracts and versioning policy. Scaling strategy against real load. Failure modes, idempotency and recovery targets. Decisions written down, so your team can extend the system without reverse-engineering it.
 
 AI systems and infrastructure
-Retrieval grounded in your own records. Private model serving on hardware or
-infrastructure you control. Orchestrators and automated workflows that carry work
-from intake to outcome, not just answer questions. Evaluation sets and regression on
-every change, so there is a number behind every claim.
+Retrieval grounded in your own records. Private model serving on hardware or infrastructure you control. Orchestrators and automated workflows that carry work from intake to outcome, not just answer questions. Evaluation sets and regression on every change, so there is a number behind every claim.
 
 WHO WE WORK WITH
-Engineering teams and product companies that need the architecture settled before
-they scale, and teams putting AI into production who need it accountable —
-traceable to a source, priced predictably, and measurable when someone asks whether
-it is right.
+Engineering teams and product companies that need the architecture settled before they scale, and teams putting AI into production who need it accountable — traceable to a source, priced predictably, and measurable when someone asks whether it is right.
 
 HOW WE WORK
-A small number of engagements at a time: a review, a build, or a retained advisory
-slot. Remote-first, working worldwide.
+A small number of engagements at a time: a review, a build, or a retained advisory slot. Remote-first, working worldwide.
 
-Also available: custom software, mobile applications, cloud infrastructure, data and
-databases, IT advisory.
+Also available: custom software, mobile applications, cloud infrastructure, data and databases, IT advisory.
 
 Start a conversation: alexanderkabua@gmail.com
 
