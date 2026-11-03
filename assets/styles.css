@@ -450,6 +450,99 @@ a { color: inherit; text-decoration: none; }
   background: radial-gradient(420px circle at 20% 0%, rgba(77, 141, 255, 0.12), transparent 62%);
 }
 
+/* ---------------- AI infrastructure ---------------- */
+
+.ai-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: clamp(1.6rem, 4vw, 3rem);
+  align-items: start;
+}
+
+.ai-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.ai-list li {
+  display: flex;
+  gap: 1.1rem;
+  padding: 1.25rem 1.35rem;
+  background: rgba(11, 15, 26, 0.86);
+  transition: background 0.3s ease;
+}
+.ai-list li:hover { background: rgba(17, 24, 39, 0.94); }
+.ai-num {
+  flex: 0 0 auto;
+  padding-top: 0.2rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+}
+.ai-list h3 { font-size: 0.98rem; margin: 0 0 0.35rem; }
+.ai-list p { font-size: 0.895rem; color: var(--muted); margin: 0; line-height: 1.6; }
+
+.ai-stack {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(180deg, rgba(19, 25, 40, 0.92), rgba(11, 15, 26, 0.92));
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.6rem 1.5rem;
+}
+.ai-stack::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(420px circle at 85% 0%, rgba(77, 141, 255, 0.14), transparent 62%);
+  pointer-events: none;
+}
+.ai-stack > * { position: relative; }
+.ai-stack h3 {
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 1.1rem;
+}
+.ai-stack dl { margin: 0; }
+.ai-stack dl > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  padding: 0.7rem 0;
+  border-top: 1px solid var(--line);
+}
+.ai-stack dl > div:first-child { border-top: 0; padding-top: 0; }
+.ai-stack dt {
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-family: var(--font-mono);
+}
+.ai-stack dd {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  letter-spacing: -0.01em;
+}
+.ai-note {
+  margin: 1.1rem 0 0;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.82rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
 /* ---------------- Steps ---------------- */
 
 .steps {
@@ -627,6 +720,7 @@ a.contact-card:hover {
 
 @media (max-width: 900px) {
   .about-grid,
+  .ai-grid,
   .contact-wrap { grid-template-columns: minmax(0, 1fr); }
 }
 
@@ -695,6 +789,7 @@ a.contact-card:hover {
 @media print {
   .site-header, .nav, .marquee, .hero-glow, .hero-grid, .footer-nav { display: none !important; }
   body { background: #fff; color: #111; }
-  .card, .about-facts, .steps li { border-color: #ddd; background: #fff; }
+  .card, .about-facts, .ai-stack, .steps li { border-color: #ddd; background: #fff; }
+  .ai-list, .ai-list li { border-color: #ddd; background: #fff; }
   .reveal { opacity: 1; transform: none; }
 }

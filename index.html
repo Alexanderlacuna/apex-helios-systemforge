@@ -48,7 +48,12 @@
     "Cloud Infrastructure",
     "Artificial Intelligence Systems",
     "Database Management",
-    "IT Consulting"
+    "IT Consulting",
+    "AI Infrastructure",
+    "Model Serving & Inference",
+    "Retrieval-Augmented Generation",
+    "Vector Databases",
+    "MLOps & Evaluation"
   ]
 }
 </script>
@@ -84,6 +89,7 @@
 
     <nav class="nav" id="primaryNav" aria-label="Primary">
       <a href="#services">Services</a>
+      <a href="#ai-infrastructure">AI Infra</a>
       <a href="#approach">Approach</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
@@ -128,12 +134,14 @@
     <div class="marquee-track">
       <span>Custom Software</span><span>·</span><span>Mobile Applications</span><span>·</span>
       <span>System Architecture</span><span>·</span><span>Cloud Infrastructure</span><span>·</span>
-      <span>AI Systems</span><span>·</span><span>Database Management</span><span>·</span>
-      <span>IT Consulting</span><span>·</span>
+      <span>AI Infrastructure</span><span>·</span><span>AI Systems</span><span>·</span>
+      <span>Model Serving</span><span>·</span><span>Vector Search</span><span>·</span>
+      <span>Database Management</span><span>·</span><span>IT Consulting</span><span>·</span>
       <span>Custom Software</span><span>·</span><span>Mobile Applications</span><span>·</span>
       <span>System Architecture</span><span>·</span><span>Cloud Infrastructure</span><span>·</span>
-      <span>AI Systems</span><span>·</span><span>Database Management</span><span>·</span>
-      <span>IT Consulting</span><span>·</span>
+      <span>AI Infrastructure</span><span>·</span><span>AI Systems</span><span>·</span>
+      <span>Model Serving</span><span>·</span><span>Vector Search</span><span>·</span>
+      <span>Database Management</span><span>·</span><span>IT Consulting</span><span>·</span>
     </div>
   </div>
 
@@ -144,7 +152,7 @@
         <p class="kicker">Capabilities</p>
         <h2>Engineering across the full stack of your business</h2>
         <p class="section-lede">
-          Seven disciplines, one forge. We take on the whole build — or plug into the
+          Eight disciplines, one forge. We take on the whole build — or plug into the
           part of your team that needs reinforcement.
         </p>
       </header>
@@ -217,8 +225,83 @@
     </div>
   </section>
 
+  <!-- AI INFRASTRUCTURE -->
+  <section class="section section-alt" id="ai-infrastructure">
+    <div class="wrap">
+      <header class="section-head reveal">
+        <p class="kicker">AI infrastructure</p>
+        <h2>Private AI, running on infrastructure you control</h2>
+        <p class="section-lede">
+          An API call is not a system. We build the layer underneath it — model serving,
+          retrieval over your own data, orchestration, evaluation, and the pipelines that
+          keep it fed — so AI features run on infrastructure you own and cost you can predict.
+        </p>
+      </header>
+
+      <div class="ai-grid">
+        <ol class="ai-list">
+          <li class="reveal">
+            <span class="ai-num mono" aria-hidden="true">01</span>
+            <div>
+              <h3>Model serving &amp; inference</h3>
+              <p>Open-weight models served on your own hardware or private VPC — quantised, batched, cached and load-tested, instead of a per-token meter running in the background.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="ai-num mono" aria-hidden="true">02</span>
+            <div>
+              <h3>Retrieval over private data</h3>
+              <p>Ingestion, chunking, embeddings and hybrid search across your documents and databases, so answers are grounded in your records before they reach a model.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="ai-num mono" aria-hidden="true">03</span>
+            <div>
+              <h3>Orchestration &amp; agents</h3>
+              <p>Tool-calling pipelines and multi-step workflows with explicit state, retries and human checkpoints — bounded automation, not a black box.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="ai-num mono" aria-hidden="true">04</span>
+            <div>
+              <h3>Evaluation &amp; guardrails</h3>
+              <p>Labelled test sets, regression runs and trace review on every prompt or model change. You get numbers that justify trusting the system in production.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="ai-num mono" aria-hidden="true">05</span>
+            <div>
+              <h3>Compute, deployment &amp; cost control</h3>
+              <p>Containerised deployment, autoscaling and capacity planning sized against real traffic — with data-residency and privacy constraints designed in, not bolted on.</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="ai-num mono" aria-hidden="true">06</span>
+            <div>
+              <h3>Data pipelines underneath it</h3>
+              <p>Scheduled ingestion, transformation and sync jobs that keep retrieval fresh and traceable, with schema evolution handled deliberately.</p>
+            </div>
+          </li>
+        </ol>
+
+        <aside class="ai-stack reveal" aria-label="Infrastructure stack we deploy with">
+          <h3>What we deploy with</h3>
+          <dl>
+            <div><dt>Serving</dt><dd>vLLM · Ollama · llama.cpp</dd></div>
+            <div><dt>Retrieval</dt><dd>pgvector · Qdrant · hybrid search</dd></div>
+            <div><dt>Orchestration</dt><dd>agent workflows · MCP · LangGraph</dd></div>
+            <div><dt>Compute</dt><dd>Kubernetes · Terraform · Docker</dd></div>
+            <div><dt>Data</dt><dd>PostgreSQL · Redis · object storage</dd></div>
+            <div><dt>Observability</dt><dd>OpenTelemetry · evals · trace review</dd></div>
+          </dl>
+          <p class="ai-note">Self-hosted, hybrid or managed — specified against your budget, latency targets and data-residency requirements.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
   <!-- APPROACH -->
-  <section class="section section-alt" id="approach">
+  <section class="section" id="approach">
     <div class="wrap">
       <header class="section-head reveal">
         <p class="kicker">How we work</p>
@@ -251,11 +334,11 @@
   </section>
 
   <!-- ABOUT -->
-  <section class="section" id="about">
+  <section class="section section-alt" id="about">
     <div class="wrap about-grid">
       <div class="about-copy reveal">
         <p class="kicker">About</p>
-        <h2>Built in Kilifi. Engineered for anywhere.</h2>
+        <h2>Engineered for anywhere.</h2>
         <p>
           APEX HELIOS SYSTEMFORGE is a software engineering studio working at the
           intersection of three things that are usually kept apart: careful software
@@ -287,7 +370,7 @@
   </section>
 
   <!-- CONTACT -->
-  <section class="section section-alt" id="contact">
+  <section class="section" id="contact">
     <div class="wrap contact-wrap">
       <div class="contact-copy reveal">
         <p class="kicker">Contact</p>
@@ -328,6 +411,7 @@
     </div>
     <nav class="footer-nav" aria-label="Footer">
       <a href="#services">Services</a>
+      <a href="#ai-infrastructure">AI Infrastructure</a>
       <a href="#approach">Approach</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
